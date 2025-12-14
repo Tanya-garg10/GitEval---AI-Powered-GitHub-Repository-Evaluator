@@ -13,6 +13,9 @@ It is especially useful for:
 * Recruiters doing quick project assessments
 * Hackathon and academic evaluations
 
+## Demo Link: 
+https://drive.google.com/file/d/1QlT0adjGwy_hy91zb62NRDo_-L6RTLaP/view?usp=drive_link
+
 ## ✨ Key Features
 
 * 📊 **Repository Scoring** (out of 100 or level-based)
