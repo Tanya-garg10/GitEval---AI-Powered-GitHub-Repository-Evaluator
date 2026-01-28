@@ -13,21 +13,21 @@ const readinessConfig = {
     color: "text-blue-400",
     bg: "bg-blue-500/10",
     border: "border-blue-500/30",
-    description: "Suitable for coursework and learning purposes"
+    description: "Perfect for learning and coursework! Focus on adding tests and documentation to level up. 📚"
   },
   "Portfolio-Ready": {
     icon: Briefcase,
     color: "text-yellow-400",
     bg: "bg-yellow-500/10",
     border: "border-yellow-500/30",
-    description: "Good for showcasing skills to potential employers"
+    description: "Great for job applications! This shows solid development skills. Add some polish to reach industry level. 💼"
   },
   "Industry-Ready": {
     icon: Rocket,
     color: "text-primary",
     bg: "bg-primary/10",
     border: "border-primary/30",
-    description: "Meets professional production standards"
+    description: "Excellent work! This meets professional standards and shows you're ready for production environments. 🚀"
   }
 };
 
