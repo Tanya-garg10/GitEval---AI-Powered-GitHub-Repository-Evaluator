@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { 
-  Code2, 
-  FolderTree, 
-  FileText, 
-  TestTube, 
-  GitCommit, 
+import {
+  Code2,
+  FolderTree,
+  FileText,
+  TestTube,
+  GitCommit,
   Lightbulb,
   ExternalLink,
   RotateCcw,
@@ -85,9 +85,9 @@ const AnalysisResults = ({ data, onReset }: AnalysisResultsProps) => {
             <h2 className="text-3xl font-bold font-mono text-gradient mb-2">
               {data.repoName}
             </h2>
-            <a 
-              href={data.repoUrl} 
-              target="_blank" 
+            <a
+              href={data.repoUrl}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
@@ -106,13 +106,13 @@ const AnalysisResults = ({ data, onReset }: AnalysisResultsProps) => {
           {/* Score column */}
           <div className="lg:col-span-1 space-y-6">
             <ScoreDisplay score={data.score} tier={data.tier} />
-            
+
             {/* Industry Readiness */}
             <IndustryReadinessTag level={data.industryReadiness} />
-            
+
             {/* README Checklist */}
             <ReadmeChecklist items={data.readmeChecklist} />
-            
+
             {/* Summary */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

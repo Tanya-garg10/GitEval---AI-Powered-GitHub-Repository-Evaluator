@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { 
-  Zap, 
-  Shield, 
-  TrendingUp, 
-  Code2, 
-  Users, 
+import {
+  Zap,
+  Shield,
+  TrendingUp,
+  Code2,
+  Users,
   Sparkles,
   AlertTriangle,
   Gauge,
@@ -63,7 +63,7 @@ const FeaturesSection = () => {
   return (
     <section id="features" className="py-24 px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/20 to-transparent" />
-      
+
       <div className="relative z-10 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +76,7 @@ const FeaturesSection = () => {
             Why <span className="text-gradient">GitEval</span>?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Elevate your coding skills with AI-powered insights that help you 
+            Elevate your coding skills with AI-powered insights that help you
             write cleaner, more maintainable, and production-ready code.
           </p>
         </motion.div>
