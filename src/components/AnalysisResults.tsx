@@ -69,12 +69,12 @@ const iconMap: { [key: string]: any } = {
 
 const AnalysisResults = ({ data, onReset }: AnalysisResultsProps) => {
   return (
-    <section className="relative py-16 px-4">
+    <section className="relative py-16 px-4 w-full overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid opacity-20" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 w-full max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}

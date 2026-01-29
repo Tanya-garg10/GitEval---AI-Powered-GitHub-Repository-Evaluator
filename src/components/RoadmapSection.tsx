@@ -53,13 +53,13 @@ const RoadmapSection = ({ items }: RoadmapSectionProps) => {
 
               {/* Content */}
               <div className="flex-1 min-w-0">
-                <div className="flex items-center gap-2 mb-1">
+                <div className="flex items-center gap-2 mb-1 max-[600px]:flex-col max-[600px]:gap-2 max-[600px]:items-start">
                   <h4 className="font-semibold font-mono text-foreground">{item.title}</h4>
                   <span className={`text-xs px-2 py-0.5 rounded-full ${config.bg} ${config.color} border ${config.border}`}>
                     {config.label}
                   </span>
                 </div>
-                <p className="text-sm text-muted-foreground">{item.description}</p>
+                <p className="text-sm text-muted-foreground max-[600px]:pt-3">{item.description}</p>
               </div>
 
               {/* Connecting line */}

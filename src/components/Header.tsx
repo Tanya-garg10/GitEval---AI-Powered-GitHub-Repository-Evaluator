@@ -25,7 +25,7 @@ const Header = () => {
 
         {/* CTA */}
         <Button variant="glass" size="sm" asChild>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/Tanya-garg10/GitEval---AI-Powered-GitHub-Repository-Evaluator" target="_blank" rel="noopener noreferrer">
             <Github className="w-4 h-4" />
             GitHub
           </a>

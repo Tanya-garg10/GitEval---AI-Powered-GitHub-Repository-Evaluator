@@ -19,7 +19,7 @@ const GitGradeHero = ({ onAnalyze, isLoading }: GitGradeHeroProps) => {
   };
 
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center px-4 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid opacity-30" />
       <div className="absolute inset-0 bg-gradient-radial" />
@@ -28,7 +28,7 @@ const GitGradeHero = ({ onAnalyze, isLoading }: GitGradeHeroProps) => {
       <div className="absolute top-20 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse-glow delay-200" />
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-4xl mx-auto text-center max-[650px]:pt-16">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-border/50 mb-8 animate-slide-up">
           <Sparkles className="w-4 h-4 text-primary" />
