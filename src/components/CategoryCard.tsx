@@ -33,7 +33,7 @@ const CategoryCard = ({ title, score, description, icon: Icon, index }: Category
     >
       {/* Hover glow effect */}
       <div className="absolute inset-0 rounded-xl bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-      
+
       <div className="relative z-10">
         <div className="flex items-start justify-between mb-4">
           <div className="p-3 rounded-lg bg-muted">

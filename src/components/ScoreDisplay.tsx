@@ -7,30 +7,30 @@ interface ScoreDisplayProps {
 }
 
 const tierConfig = {
-  Bronze: { 
-    color: "text-amber-600", 
-    bg: "bg-amber-500/10", 
+  Bronze: {
+    color: "text-amber-600",
+    bg: "bg-amber-500/10",
     border: "border-amber-500/30",
     glow: "shadow-amber-500/20",
     icon: Award
   },
-  Silver: { 
-    color: "text-slate-300", 
-    bg: "bg-slate-400/10", 
+  Silver: {
+    color: "text-slate-300",
+    bg: "bg-slate-400/10",
     border: "border-slate-400/30",
     glow: "shadow-slate-400/20",
     icon: Star
   },
-  Gold: { 
-    color: "text-yellow-400", 
-    bg: "bg-yellow-500/10", 
+  Gold: {
+    color: "text-yellow-400",
+    bg: "bg-yellow-500/10",
     border: "border-yellow-500/30",
     glow: "shadow-yellow-500/20",
     icon: Trophy
   },
-  Platinum: { 
-    color: "text-cyan-300", 
-    bg: "bg-cyan-400/10", 
+  Platinum: {
+    color: "text-cyan-300",
+    bg: "bg-cyan-400/10",
     border: "border-cyan-400/30",
     glow: "shadow-cyan-400/20",
     icon: Trophy
@@ -40,7 +40,7 @@ const tierConfig = {
 const ScoreDisplay = ({ score, tier }: ScoreDisplayProps) => {
   const config = tierConfig[tier];
   const TierIcon = config.icon;
-  
+
   const circumference = 2 * Math.PI * 60;
   const strokeDashoffset = circumference - (score / 100) * circumference;
 
@@ -80,7 +80,7 @@ const ScoreDisplay = ({ score, tier }: ScoreDisplayProps) => {
             transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
           />
         </svg>
-        
+
         {/* Score text */}
         <div className="absolute inset-0 flex flex-col items-center justify-center">
           <motion.span

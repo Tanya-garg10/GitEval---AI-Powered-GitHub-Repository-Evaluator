@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import { 
-  Code2, 
-  FolderTree, 
-  FileText, 
-  TestTube, 
-  GitCommit, 
+import {
+  Code2,
+  FolderTree,
+  FileText,
+  TestTube,
+  GitCommit,
   Lightbulb,
   ExternalLink,
   RotateCcw,
@@ -69,12 +69,12 @@ const iconMap: { [key: string]: any } = {
 
 const AnalysisResults = ({ data, onReset }: AnalysisResultsProps) => {
   return (
-    <section className="relative py-16 px-4">
+    <section className="relative py-16 px-4 w-full overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid opacity-20" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[600px] h-[400px] bg-primary/5 rounded-full blur-3xl" />
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div className="relative z-10 w-full max-w-6xl mx-auto">
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -85,9 +85,9 @@ const AnalysisResults = ({ data, onReset }: AnalysisResultsProps) => {
             <h2 className="text-3xl font-bold font-mono text-gradient mb-2">
               {data.repoName}
             </h2>
-            <a 
-              href={data.repoUrl} 
-              target="_blank" 
+            <a
+              href={data.repoUrl}
+              target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-primary transition-colors"
             >
@@ -106,13 +106,13 @@ const AnalysisResults = ({ data, onReset }: AnalysisResultsProps) => {
           {/* Score column */}
           <div className="lg:col-span-1 space-y-6">
             <ScoreDisplay score={data.score} tier={data.tier} />
-            
+
             {/* Industry Readiness */}
             <IndustryReadinessTag level={data.industryReadiness} />
-            
+
             {/* README Checklist */}
             <ReadmeChecklist items={data.readmeChecklist} />
-            
+
             {/* Summary */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}

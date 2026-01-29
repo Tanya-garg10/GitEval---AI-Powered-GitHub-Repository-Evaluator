@@ -19,16 +19,16 @@ const GitGradeHero = ({ onAnalyze, isLoading }: GitGradeHeroProps) => {
   };
 
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center px-4 overflow-hidden">
+    <section className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-grid opacity-30" />
       <div className="absolute inset-0 bg-gradient-radial" />
-      
+
       {/* Floating orbs */}
       <div className="absolute top-20 left-1/4 w-64 h-64 bg-primary/10 rounded-full blur-3xl animate-pulse-glow" />
       <div className="absolute bottom-20 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse-glow delay-200" />
 
-      <div className="relative z-10 max-w-4xl mx-auto text-center">
+      <div className="relative z-10 max-w-4xl mx-auto text-center max-[650px]:pt-16">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted/50 border border-border/50 mb-8 animate-slide-up">
           <Sparkles className="w-4 h-4 text-primary" />
@@ -39,13 +39,13 @@ const GitGradeHero = ({ onAnalyze, isLoading }: GitGradeHeroProps) => {
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up delay-100">
           <span className="text-gradient">GitEval</span>
         </h1>
-        
+
         <p className="text-xl md:text-2xl text-muted-foreground mb-4 animate-slide-up delay-200 font-mono">
           Your AI Virtual Mentor
         </p>
-        
+
         <p className="text-lg text-muted-foreground/80 mb-12 max-w-2xl mx-auto animate-slide-up delay-300">
-          Evaluate any public GitHub repository with AI precision. Get actionable insights, 
+          Evaluate any public GitHub repository with AI precision. Get actionable insights,
           scores, and a personalized improvement roadmap.
         </p>
 
@@ -62,9 +62,9 @@ const GitGradeHero = ({ onAnalyze, isLoading }: GitGradeHeroProps) => {
                 className="pl-12 h-14 text-base"
               />
             </div>
-            <Button 
-              type="submit" 
-              variant="hero" 
+            <Button
+              type="submit"
+              variant="hero"
               size="xl"
               disabled={isLoading || !repoUrl.trim()}
             >
